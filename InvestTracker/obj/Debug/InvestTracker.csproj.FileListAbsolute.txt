@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\InvestTracker\InvestTracker\bin\Debug\InvestTracker.exe.config
+C:\Users\user\Desktop\InvestTracker\InvestTracker\bin\Debug\InvestTracker.exe
+C:\Users\user\Desktop\InvestTracker\InvestTracker\bin\Debug\InvestTracker.pdb
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.Properties.Resources.resources
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.csproj.GenerateResource.cache
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.exe
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.pdb
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.exe.config
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.StartForm.resources
