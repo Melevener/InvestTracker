@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InvestTracker.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,12 @@ namespace InvestTracker
         {
             InitializeComponent();
 
+        }
+
+        private void btnBond_Click(object sender, EventArgs e)
+        {
+            BondOperationsForm bondForm = new BondOperationsForm();
+            bondForm.ShowDialog();
         }
     }
 }

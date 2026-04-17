@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\forms\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|c:\\users\\user\\desktop\\investtracker\\investtracker\\forms\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|solutionrelative:forms\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|c:\\users\\user\\desktop\\investtracker\\investtracker\\forms\\bondoperationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|solutionrelative:forms\\bondoperationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|c:\\users\\user\\desktop\\investtracker\\investtracker\\forms\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|solutionrelative:forms\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|c:\\users\\user\\desktop\\investtracker\\investtracker\\forms\\bondoperationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{409E614E-8855-4CDD-8E27-941FE3C0E356}|InvestTracker.csproj|solutionrelative:forms\\bondoperationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +36,7 @@
         },
         {
           "DockedWidth": 117,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,16 +44,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "StartForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\Forms\\StartForm.cs",
               "RelativeDocumentMoniker": "Forms\\StartForm.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\Forms\\StartForm.cs",
               "RelativeToolTip": "Forms\\StartForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAWwBIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T15:06:22.378Z",
+              "WhenOpened": "2026-04-17T11:11:32.276Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BondOperationsForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\Forms\\BondOperationsForm.cs",
+              "RelativeDocumentMoniker": "Forms\\BondOperationsForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\Forms\\BondOperationsForm.cs",
+              "RelativeToolTip": "Forms\\BondOperationsForm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAjwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T10:52:32.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BondOperationsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\Forms\\BondOperationsForm.cs",
+              "RelativeDocumentMoniker": "Forms\\BondOperationsForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\InvestTracker\\InvestTracker\\Forms\\BondOperationsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Forms\\BondOperationsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T09:58:49.163Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
