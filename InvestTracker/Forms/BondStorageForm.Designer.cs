@@ -49,6 +49,7 @@
             this.dataGridViewBonds.RowTemplate.Height = 24;
             this.dataGridViewBonds.Size = new System.Drawing.Size(455, 297);
             this.dataGridViewBonds.TabIndex = 0;
+            this.dataGridViewBonds.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBonds_CellEndEdit);
             // 
             // tableLayoutPanel1
             // 

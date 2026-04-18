@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Npgsql;
 
 namespace InvestTracker.Forms
 {
@@ -16,6 +17,31 @@ namespace InvestTracker.Forms
         {
             InitializeComponent();
             SetupDataGridView();
+            LoadBondsData();
+        }
+
+        private void dataGridViewBonds_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridViewBonds.Rows[e.RowIndex];
+
+            string name = row.Cells["colName"].Value?.ToString();
+            string isin = row.Cells["colIsin"].Value?.ToString();
+
+            if (!string.IsNullOrWhiteSpace(name) && !string.IsNullOrWhiteSpace(isin))
+            {
+                string sql = @"
+                    INSERT INTO bonds (name, isin) 
+                    VALUES (@name, @isin) 
+                    ON CONFLICT (isin) 
+                    DO UPDATE SET name = EXCLUDED.name;";
+
+                Npgsql.NpgsqlParameter[] ps = {
+                    new Npgsql.NpgsqlParameter("@name", name),
+                    new Npgsql.NpgsqlParameter("@isin", isin.ToUpper())
+                };
+
+                DataBaseHelper.ExecuteNonQuery(sql, ps);
+            }
         }
 
         #region Добавление облигации
@@ -42,6 +68,12 @@ namespace InvestTracker.Forms
 
                 if (confirm == DialogResult.Yes)
                 {
+                    string isin = dataGridViewBonds.CurrentRow.Cells["colIsin"].Value.ToString();
+                    string sql = "DELETE FROM bonds WHERE isin = @isin";
+
+                    NpgsqlParameter[] ps = { new NpgsqlParameter("@isin", isin) };
+                    DataBaseHelper.ExecuteNonQuery(sql, ps);
+
                     dataGridViewBonds.Rows.Remove(dataGridViewBonds.CurrentRow);
                     dataGridViewBonds.Focus();
                 }
@@ -54,6 +86,16 @@ namespace InvestTracker.Forms
         }
         #endregion
         #region Пользовательские методы
+        private void LoadBondsData()
+        {
+            string sql = "SELECT name, isin FROM bonds ORDER BY name";
+            DataTable dt = DataBaseHelper.ExecuteQuery(sql);
+
+            dataGridViewBonds.Rows.Clear();
+
+            foreach (DataRow dr in dt.Rows)
+                dataGridViewBonds.Rows.Add(dr["name"], dr["isin"]);
+        }
         private void SetupDataGridView()
         {
             var dgv = dataGridViewBonds;
@@ -98,6 +140,7 @@ namespace InvestTracker.Forms
                     e.FormattingApplied = true;
                 }
             };
+            dgv.CellEndEdit += dataGridViewBonds_CellEndEdit;
         }
         #endregion
     }

@@ -87,36 +87,50 @@ namespace InvestTracker.Forms
             /* Колонка "Дата операции" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn 
             { 
-                Name = "colDate", HeaderText = "Дата", Width = 120 
+                Name = "colDate", 
+                HeaderText = "Дата", 
+                Width = 120 
             });
             /* Колонка "Название облигации" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn 
             { 
-                Name = "colName", HeaderText = "Название", Width = 250 
+                Name = "colName", 
+                HeaderText = "Название",
+                Width = 250 
             });
             /* Колонка "Количество купленных облигаций" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn { 
-                Name = "colCount", HeaderText = "Кол-во", Width = 80 
+                Name = "colCount", 
+                HeaderText = "Кол-во", 
+                Width = 80 
             });
             /* Колонка "Цена за 1 облигацию" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn 
             { 
-                Name = "colPrice", HeaderText = "Цена за шт.", Width = 140 
+                Name = "colPrice", 
+                HeaderText = "Цена за шт.", 
+                Width = 140 
             });
             /* Колонка "Комиссия" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn 
             { 
-                Name = "colComission", HeaderText = "Комиссия", Width = 100 
+                Name = "colComission",
+                HeaderText = "Комиссия",
+                Width = 100 
             });
             /* Колонка "НКД" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn 
             { 
-                Name = "colNkd", HeaderText = "НКД", Width = 90 
+                Name = "colNkd", 
+                HeaderText = "НКД", 
+                Width = 90 
             });
             /* Колонка "Общая сумма операции" */
             dgv.Columns.Add(new DataGridViewTextBoxColumn 
             { 
-                Name = "colSum", HeaderText = "Сумма", Width = 170 
+                Name = "colSum", 
+                HeaderText = "Сумма", 
+                Width = 170 
             });
 
             foreach (DataGridViewColumn col in dgv.Columns)

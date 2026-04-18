@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("InvestTracker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Инструмент для мониторинга инвестиций в облигации")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Melevener Dev")]
 [assembly: AssemblyProduct("InvestTracker")]
 [assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
