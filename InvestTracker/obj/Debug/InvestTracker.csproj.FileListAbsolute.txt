@@ -10,3 +10,4 @@ C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.pdb
 C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.exe.config
 C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.StartForm.resources
 C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.Forms.BondOperationsForm.resources
+C:\Users\user\Desktop\InvestTracker\InvestTracker\obj\Debug\InvestTracker.Forms.BondStorageForm.resources

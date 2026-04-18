@@ -21,8 +21,14 @@ namespace InvestTracker
 
         private void btnBond_Click(object sender, EventArgs e)
         {
-            BondOperationsForm bondForm = new BondOperationsForm();
-            bondForm.ShowDialog();
+            BondOperationsForm bondOperationsForm = new BondOperationsForm();
+            bondOperationsForm.ShowDialog();
+        }
+
+        private void buttonBondStorage_Click(object sender, EventArgs e)
+        {
+            BondStorageForm bondStorageForm = new BondStorageForm();
+            bondStorageForm.ShowDialog();
         }
     }
 }

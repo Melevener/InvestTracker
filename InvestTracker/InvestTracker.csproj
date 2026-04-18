@@ -55,6 +55,12 @@
     <Compile Include="Forms\BondOperationsForm.Designer.cs">
       <DependentUpon>BondOperationsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BondStorageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BondStorageForm.Designer.cs">
+      <DependentUpon>BondStorageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BondOperationsForm.resx">
       <DependentUpon>BondOperationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BondStorageForm.resx">
+      <DependentUpon>BondStorageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
