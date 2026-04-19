@@ -35,6 +35,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.dtpDatePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBondOperations)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,12 +62,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewBondOperations.ColumnHeadersHeight = 29;
             this.dataGridViewBondOperations.Location = new System.Drawing.Point(20, 50);
+            this.dataGridViewBondOperations.MultiSelect = false;
             this.dataGridViewBondOperations.Name = "dataGridViewBondOperations";
             this.dataGridViewBondOperations.RowHeadersVisible = false;
             this.dataGridViewBondOperations.RowHeadersWidth = 51;
             this.dataGridViewBondOperations.RowTemplate.Height = 24;
             this.dataGridViewBondOperations.Size = new System.Drawing.Size(1190, 430);
             this.dataGridViewBondOperations.TabIndex = 3;
+            this.dataGridViewBondOperations.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBondOperations_CellClick);
+            this.dataGridViewBondOperations.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBondOperations_CellValueChanged);
             this.dataGridViewBondOperations.SizeChanged += new System.EventHandler(this.dataGridViewBondOperations_SizeChanged);
             // 
             // tableLayoutPanel1
@@ -127,17 +131,30 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // dtpDatePicker
+            // 
+            this.dtpDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDatePicker.Location = new System.Drawing.Point(20, 22);
+            this.dtpDatePicker.Name = "dtpDatePicker";
+            this.dtpDatePicker.Size = new System.Drawing.Size(200, 22);
+            this.dtpDatePicker.TabIndex = 5;
+            this.dtpDatePicker.Visible = false;
+            this.dtpDatePicker.CloseUp += new System.EventHandler(this.dtpDatePicker_CloseUp);
+            this.dtpDatePicker.ValueChanged += new System.EventHandler(this.dtpDatePicker_ValueChanged);
+            // 
             // BondOperationsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1222, 553);
+            this.Controls.Add(this.dtpDatePicker);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dataGridViewBondOperations);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BondOperationsForm";
             this.Text = "История покупок облигаций";
+            this.Enter += new System.EventHandler(this.BondOperationsForm_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBondOperations)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -152,5 +169,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.DateTimePicker dtpDatePicker;
     }
 }

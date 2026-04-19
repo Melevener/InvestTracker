@@ -80,7 +80,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="Utils\DataBaseHelper.cs" />
     <Compile Include="Forms\BondOperationsForm.cs">
       <SubType>Form</SubType>
     </Compile>
