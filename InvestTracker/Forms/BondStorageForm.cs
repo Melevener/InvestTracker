@@ -105,6 +105,7 @@ namespace InvestTracker.Forms
             dgv.RowHeadersVisible = false;           
             dgv.BorderStyle = BorderStyle.FixedSingle;
             dgv.MultiSelect = false;
+            dgv.AllowUserToResizeRows = false;
 
             dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -125,7 +126,7 @@ namespace InvestTracker.Forms
             dgv.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "colIsin",
-                HeaderText = "ISIN-код",
+                HeaderText = "ISIN",
                 Width = 105,
                 MinimumWidth = 105,                   
                 MaxInputLength = 12,                  

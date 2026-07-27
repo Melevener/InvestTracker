@@ -77,7 +77,7 @@
             this.btnArchive.Name = "btnArchive";
             this.btnArchive.Size = new System.Drawing.Size(147, 44);
             this.btnArchive.TabIndex = 4;
-            this.btnArchive.Text = "Архив";
+            this.btnArchive.Text = "В архив";
             this.btnArchive.UseVisualStyleBackColor = false;
             // 
             // btnDelete

@@ -149,6 +149,7 @@ namespace InvestTracker.Forms
             dgv.ReadOnly = false;
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
             dgv.RowHeadersVisible = false;
             dgv.MultiSelect = false;
 
